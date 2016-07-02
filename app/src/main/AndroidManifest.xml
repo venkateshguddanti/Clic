@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.clic.org" >
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+        android:maxSdkVersion="18" />
+    <application
+        android:name=".serve.AppController.ClicController"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".serve.activity.SplashActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".serve.activity.SignupGuideActvity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
+        <activity
+            android:name=".serve.activity.MainActivityClic"
+            android:label="@string/title_activity_catogories"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".serve.activity.ClicServeProducts"
+            android:label="@string/title_activity_click_menu"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".serve.activity.AddClicProductActivity"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".serve.activity.ProductDetailsAndServicesActivity"
+            android:label="@string/title_activity_product_details_and_services"
+            android:theme="@style/AppTheme" >
+        </activity>
+        <activity
+            android:name=".serve.activity.RecommendClicAccessoriesActivity"
+            android:windowSoftInputMode="stateHidden"
+            >
+
+        </activity>
+
+        <activity android:name=".serve.activity.UploadDocumentsActivity"
+            android:theme="@style/AppTheme">
+        </activity>
+        <service android:name=".serve.services.ClicMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"></action>
+            </intent-filter>
+        </service>
+        <service android:name=".serve.services.ClicInstanceIdService">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"></action>
+            </intent-filter>
+        </service>
+
+    </application>
+
+</manifest>

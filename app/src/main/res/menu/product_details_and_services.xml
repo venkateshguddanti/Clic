@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_search"
+        android:icon="@android:drawable/ic_menu_search"
+        app:showAsAction="always"
+        app:actionViewClass="android.support.v7.widget.SearchView"
+        android:title="Search"/>
+    <item
+        android:id="@+id/action_home"
+        android:orderInCategory="100"
+        android:title="@string/action_Home"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clicsafe"
+        android:orderInCategory="100"
+        android:title="@string/action_clicafe"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clicpay"
+        android:orderInCategory="100"
+        android:title="@string/action_clicpay"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_clicshare"
+        android:orderInCategory="100"
+        android:title="@string/action_shareClic"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_notification"
+        android:orderInCategory="100"
+        android:title="@string/action_Notifications"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_rental"
+        android:orderInCategory="100"
+        android:title="@string/action_Rentals"
+        app:showAsAction="never" />
+
+
+
+</menu>

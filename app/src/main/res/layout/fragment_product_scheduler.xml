@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/txt_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Upload more"
+                    android:paddingLeft="10dp"
+                    android:layout_margin="5dp"
+                    style="@style/CodeFont"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/documentStatus"
+                    android:src="@drawable/no_update"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="20dp"
+                    android:layout_alignTop="@+id/chooseDocument"
+                    android:layout_toLeftOf="@+id/chooseDocument"
+                    android:layout_toStartOf="@+id/chooseDocument" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chooseDocument"
+                    android:layout_margin="5dp"
+                    android:paddingRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@android:drawable/ic_menu_set_as"
+
+                    />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Capture Location"
+                    android:paddingLeft="10dp"
+                    android:layout_margin="5dp"
+                    android:layout_centerInParent="true"
+                    style="@style/CodeFont"
+                    android:layout_alignParentLeft="true"/>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gpsLocationStatus"
+                    android:src="@drawable/no_update"
+                    android:layout_centerInParent="true"
+                    android:paddingRight="20dp"
+                    android:layout_alignTop="@+id/gpsLocation"
+                    android:layout_toLeftOf="@+id/gpsLocation"
+                    android:layout_toStartOf="@+id/gpsLocation" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/gpsLocation"
+                    android:layout_margin="5dp"
+                    android:paddingRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@android:drawable/ic_menu_mylocation"
+
+                    />
+
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/layout_yrs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:background="@android:color/white"
+                android:layout_marginTop="20dp"
+                >
+                <TextView
+                    android:id="@+id/txt_date_of_purchase"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Schedule Service"
+                    android:paddingLeft="10dp"
+                    android:layout_margin="5dp"
+                    style="@style/CodeFont"
+                    android:layout_centerInParent="true"
+                    android:layout_alignParentLeft="true"/>
+
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn_date"
+                    android:text="Pick Date"
+                    android:layout_margin="5dp"
+                    style="@style/ClicButton"
+                    android:layout_alignParentRight="true"
+                    android:src="@android:drawable/ic_menu_set_as"
+
+                    />
+
+            </RelativeLayout>
+            <EditText
+                android:id="@+id/edt_des"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:inputType="text"
+                android:layout_margin="10dp"
+                android:hint="Description"
+                style="@style/App_EditTextStyle"
+                android:padding="5dp"
+                android:imeOptions="actionDone"/>
+            <Button
+                android:id="@+id/btn_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="submit"
+                style="@style/ClicButton"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

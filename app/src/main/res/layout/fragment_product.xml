@@ -1,0 +1,109 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.clic.org.serve.fragments.ProductInfoFragment"
+    android:layout_centerInParent="true">
+    <LinearLayout
+        android:id="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="15dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/mobile"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            style="@style/CodeFont"
+            android:layout_margin="10dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:id="@+id/viewRaiseReq">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/img_req_service"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:src="@drawable/req_for_ser"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@+id/img_req_service"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Request For Service"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:id="@+id/viewHistory">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/img_serivce_history"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:src="@drawable/history"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@+id/img_serivce_history"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/CodeFont"
+                android:text="View Service History"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:background="@android:color/white"
+            android:id="@+id/viewTrouble">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/img_troubleshoot"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:src="@drawable/troubleshooting"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@+id/img_troubleshoot"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                style="@style/CodeFont"
+                android:text="Trouble Shooting"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>

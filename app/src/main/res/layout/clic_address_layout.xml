@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edithouseNo"
+        android:hint="House Number"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_margin="5dp"
+        android:layout_gravity="right" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editStreetName"
+        android:hint="Street Name"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:id="@+id/editCity"
+        android:inputType="text"
+        android:hint="City"
+        android:imeOptions="actionNext"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editState"
+        android:hint="State"
+        android:imeOptions="actionNext"
+        android:layout_margin="5dp"
+        android:inputType="text"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editCountry"
+        android:hint="Country"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_margin="5dp"
+        android:layout_gravity="center_horizontal" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editPincode"
+        android:hint="Pincode"
+        android:inputType="number"
+        android:imeOptions="actionDone"
+        android:layout_margin="5dp"
+        android:layout_gravity="right" />
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/ClicButton"
+        android:text="Submit"/>
+</LinearLayout>

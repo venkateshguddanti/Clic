@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    >
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/accessories"
+        android:id="@+id/item_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Name"
+        android:id="@+id/item_name"
+        style="@style/CodeFont"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_toEndOf="@+id/item_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Description"
+        android:id="@+id/item_des"
+        style="@style/CodeFont"
+        android:layout_margin="5dp"
+        android:layout_below="@+id/item_name"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_toEndOf="@+id/item_icon" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Views"
+        style="@style/CodeFont"
+        android:id="@+id/item_views"
+        android:layout_margin="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Date"
+        android:id="@+id/item_date"
+        android:layout_margin="5dp"
+        android:layout_alignBottom="@+id/item_icon"
+        style="@style/CodeFont"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Item Price"
+        android:id="@+id/item_price"
+        android:layout_margin="5dp"
+        android:layout_alignBottom="@+id/item_icon"
+        style="@style/CodeFont"
+        android:layout_toRightOf="@+id/item_icon"
+        android:layout_toEndOf="@+id/item_icon" />
+
+</RelativeLayout>

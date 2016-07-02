@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">Clic</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_catogories">Clic Serve</string>
+    <string name="title_activity_click_menu">Clic Products</string>
+    <string name="title_activity_add_clic_product">AddClicProductActivity</string>
+
+    <!--SingupActivity-->
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_mobile">Mobile Number</string>
+    <string name="hint_search">Search</string>
+    <string name="btn_sign_up">SignUp</string>
+    <string name="err_msg_name">Enter your full name</string>
+    <string name="err_msg_email">Enter valid email address</string>
+    <string name="err_msg_password">Enter the password</string>
+    <string name="err_msg_mobile">Moibile number already exist!</string>
+    <string name="clic_username">UserName</string>
+    <string name="clic_password">PassWord</string>
+    <string name="clic_ClientID">ClientID</string>
+
+    <!-- Main Activity Clic-->
+    <string name="activity_service_req">ServiceRequest</string>
+    <string name="activity_service_req_addProduct">Add Product</string>
+    <string name="activity_service_req_addReq">Add Request</string>
+    <string name="activity_type">TypeOfActivity</string>
+    <string name="activity_upload_docs">UploadDocs</string>
+    <string name="activity_know_more">KnowMore</string>
+    <string name="is_product_exit">ProductExist</string>
+
+    <string name="schedule_serReq">TypeOfScheduleReq</string>
+    <string name="schedule_reqReq">TypeOfSchedulereqReq</string>
+
+
+    <!--AddClicProduct-->
+    <string name="user_item">UserItem</string>
+    <string name="list_type">ListType</string>
+    <string name="list_Product">Products</string>
+    <string name="list_Brand">Brands</string>
+    <string name="list_categories">ProductCategories</string>
+    <string name="list_Sub_categories">ProductSubCategories</string>
+    <string name="list_model">ProductModel</string>
+    <string name="list_repair_type">RepairType</string>
+    <string name="add_invovice">Invoice</string>
+
+    <string name="schedule_service">ServiceSchedule</string>
+
+    <string name="title_activity_product_description">ProductDescriptionActivity</string>
+    <string name="title_activity_product_details_and_services">Clic Serve
+    </string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="action_clicafe">Clic Safe</string>
+    <string name="action_clicpay">Clic Save</string>
+    <string name="action_shareClic">Share Clic</string>
+    <string name="action_Notifications">Notifications</string>
+    <string name="action_Rentals">Rentals</string>
+    <string name="action_Home">Home</string>
+
+
+    <string name="parcel_products">parcelProducts</string>
+    <string name="parcel_categories">parcelCategories</string>
+    <string name="parcel_sub_cat">parcelSubCat</string>
+    <string name="parcel_model">parcelModel</string>
+    <string name="parcel_item">parcelItem</string>
+    <string name="parcel_repiar_type">parceReqType</string>
+    <string name="parcel_repiar_type_req">parceReqTypeReq</string>
+    <string name="parcel_service_type">parceServiceType</string>
+
+<!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_blank">BlankActivity</string>
+</resources>

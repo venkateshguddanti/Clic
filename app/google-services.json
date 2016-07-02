@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "149775299671",
+    "firebase_url": "https://clicserve.firebaseio.com",
+    "project_id": "clicserve",
+    "storage_bucket": "clicserve.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:149775299671:android:efdbdd1c06e063cf",
+        "android_client_info": {
+          "package_name": "com.clic.org.serve"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "149775299671-vo1o0rc5e2gur4fhqsgf0l0d5j92ro9k.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.clic.org.serve",
+            "certificate_hash": "C368A19B63501D358EB137E809EA96882E62CB3D"
+          }
+        },
+        {
+          "client_id": "149775299671-3db0hkajs5tie7cnlf4dda70q83bhv3m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcPLNhgtve8F2OAJbbBQuHElf_M3ifvtU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "149775299671-3db0hkajs5tie7cnlf4dda70q83bhv3m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

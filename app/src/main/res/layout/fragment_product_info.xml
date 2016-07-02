@@ -1,0 +1,255 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.clic.org.serve.fragments.ProductInfoFragment"
+    android:layout_centerInParent="true">
+<LinearLayout
+    android:id="@+id/layout_info"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginTop="15dp"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="left"
+        android:src="@drawable/mobile"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/modelIcon" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name:"
+                style="@style/CodeFont"
+                android:layout_weight=".50"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile"
+                style="@style/CodeFont"
+                android:layout_weight=".50"
+                android:id="@+id/modelName" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year Of Purchase:"
+                style="@style/CodeFont"
+                android:layout_weight=".50"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Year"
+                style="@style/CodeFont"
+                android:layout_weight=".50"
+                android:id="@+id/purchaseYear" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model Number:"
+                style="@style/CodeFont"
+                android:layout_weight=".50"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Model No"
+                style="@style/CodeFont"
+                android:layout_weight=".50"
+                android:id="@+id/modelNumber" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/layout_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:layout_margin="5dp"
+            android:id="@+id/viewInvoice"
+            android:gravity="center">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/img_ivnoice"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:src="@drawable/invoice"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@+id/img_ivnoice"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="View Invoice"
+                android:id="@+id/textView2" />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_statusInvoce"
+                android:paddingRight="20dp"
+                android:id="@+id/invoiceStatus"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:id="@+id/txt_statusInvoce"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Upload"
+                style="@style/CodeFont"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:layout_margin="5dp"
+            android:id="@+id/userMannual">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/img_manual"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:src="@drawable/usermanual"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@+id/img_manual"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="User Manual"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:layout_margin="5dp">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/img_warranty"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:src="@drawable/warranty"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@+id/img_warranty"
+                android:id="@+id/txt_warranty"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:paddingRight="10dp"
+                style="@style/CodeFont"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Warranty"
+                />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_statusWarranty"
+                android:paddingRight="20dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/warrantyStatus"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:id="@+id/txt_statusWarranty"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Upload"
+                style="@style/CodeFont"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@android:color/white"
+            android:layout_margin="5dp">
+            <ImageView
+                android:layout_margin="5dp"
+                android:id="@+id/img_insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="20dp"
+                android:src="@drawable/insurance"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_toRightOf="@+id/img_insurance"
+                android:id="@+id/txt_insurance"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                style="@style/CodeFont"
+                android:paddingRight="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Insurance"
+                />
+            <ImageView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/txt_statusInsurance"
+                android:paddingRight="20dp"
+                android:layout_centerInParent="true"
+                android:id="@+id/insuranceStatus"
+                android:layout_marginRight="10dp" />
+            <TextView
+                android:id="@+id/txt_statusInsurance"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Upload"
+                style="@style/CodeFont"
+                android:paddingRight="20dp"
+                android:gravity="center"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

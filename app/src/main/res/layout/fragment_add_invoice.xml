@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="10dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/txt_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Invoice"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            style="@style/CodeFont"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/documentStatus"
+            android:src="@drawable/no_update"
+            android:layout_centerInParent="true"
+            android:paddingRight="20dp"
+            android:layout_alignTop="@+id/chooseDocument"
+            android:layout_toLeftOf="@+id/chooseDocument"
+            android:layout_toStartOf="@+id/chooseDocument" />
+
+       <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/chooseDocument"
+        android:layout_margin="5dp"
+        android:paddingRight="15dp"
+        android:layout_alignParentRight="true"
+        android:src="@android:drawable/ic_menu_set_as"
+
+            />
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:layout_marginTop="20dp"
+        >
+        <TextView
+            android:id="@+id/txt_warranty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warranty"
+            android:paddingLeft="10dp"
+            android:layout_margin="5dp"
+            style="@style/CodeFont"
+            android:layout_centerInParent="true"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/warrantyStatus"
+            android:src="@drawable/no_update"
+            android:layout_centerInParent="true"
+            android:paddingRight="20dp"
+            android:layout_alignTop="@+id/chooseWarranty"
+            android:layout_toLeftOf="@+id/chooseWarranty"
+            android:layout_toStartOf="@+id/chooseWarranty"
+             />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/chooseWarranty"
+            android:layout_margin="5dp"
+            android:paddingRight="15dp"
+            android:layout_alignParentRight="true"
+            android:src="@android:drawable/ic_menu_set_as"
+
+             />
+
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/txt_insurance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Insurance"
+                android:paddingLeft="10dp"
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                style="@style/CodeFont"
+                android:layout_alignParentLeft="true"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/insuranceStatus"
+                android:src="@drawable/no_update"
+                android:layout_centerInParent="true"
+                android:paddingRight="20dp"
+                android:layout_alignTop="@+id/chooseInsurance"
+                android:layout_toLeftOf="@+id/chooseInsurance"
+                android:layout_toStartOf="@+id/chooseInsurance"
+                 />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/chooseInsurance"
+                android:layout_margin="5dp"
+                android:paddingRight="15dp"
+                android:layout_alignParentRight="true"
+                android:src="@android:drawable/ic_menu_set_as"
+
+                 />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/layout_yrs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:id="@+id/txt_date_of_purchase"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date Of Purchase"
+                android:paddingLeft="10dp"
+                style="@style/CodeFont"
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_date"
+                android:text="Pick Date"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                style="@style/ClicButton"
+                android:src="@android:drawable/ic_menu_set_as"
+
+                />
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Address"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            style="@style/CodeFont"/>
+        <RelativeLayout
+            android:id="@+id/layout_itemAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:layout_marginTop="10dp"
+            >
+            <CheckBox
+                android:id="@+id/addressCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SameAddress"
+                android:paddingLeft="10dp"
+                style="@style/CodeFont"
+                android:layout_margin="5dp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentLeft="true"/>
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_ItemAddress"
+                android:text="Address"
+                android:layout_margin="5dp"
+                android:layout_alignParentRight="true"
+                style="@style/ClicButton"
+                android:src="@android:drawable/ic_menu_set_as"
+
+                />
+
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="@android:color/white"
+            android:layout_marginTop="20dp"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Warranty"
+                style="@style/CodeFont"
+                android:layout_gravity="left|center"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="20dp"/>
+            <EditText
+                android:id="@+id/edt_warranty"
+                android:layout_width="100dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="right|end"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:layout_height="wrap_content"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="submit"
+            style="@style/ClicButton"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"/>
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
